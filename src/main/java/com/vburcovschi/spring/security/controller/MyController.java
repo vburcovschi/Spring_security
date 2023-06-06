@@ -11,4 +11,13 @@ public class MyController {
     public String getInfoForAllEmps(){
         return "view_for_all_employees";
     }
+    @GetMapping("/hr_info")
+    public String getInfoOnlyForHR(){
+        return "view_for_HR";
+    }
+
+    @GetMapping("/manager_info")
+    public String getInfoOnlyForMangers(){
+        return "view_for_managers";
+    }
 }
